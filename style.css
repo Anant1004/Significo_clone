@@ -1,0 +1,47 @@
+:root{
+    --salmon: #ef9d71;
+    --black : #000;
+    --white : #fff;
+    --cyan : #aedee0;
+    --darkSalmon : #200c0a;
+}
+
+body{
+    transition: background-color ease-out .5s;
+}
+
+*::selection{
+    background-color: var(--salmon);
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+.video{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--black);
+}
+
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--darkSalmon);
+}
+
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
