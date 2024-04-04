@@ -8,6 +8,9 @@
 
 body{
     transition: background-color ease-out .5s;
+    
+    /*I set the overflow-x variable to hidden to make only the y axis scrollbar visible. Phillip Andrews*/
+    overflow-x: hidden;
 }
 
 *::selection{
